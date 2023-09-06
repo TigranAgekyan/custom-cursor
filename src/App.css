@@ -1,3 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  @apply cursor-none 
+}
+
+.c--hidden {
+  opacity: 0;
+}
+
+.c--clicked {
+  @apply
+  bg-black
+  mix-blend-exclusion
+  scale-75
+}
+
+.c--link-hovered {
+  @apply
+  scale-[2]
+  bg-black
+  opacity-50
+}
+
+.cursor {
+  @apply
+  w-[32px] h-[32px] rounded-full border border-black fixed translate-x-[-50%] translate-y-[-50%]
+  transition duration-150 pointer-events-none;
+}
+
 .App {
   text-align: center;
 }
